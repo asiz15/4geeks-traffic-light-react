@@ -11,3 +11,38 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.traffic-light{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    width: 130px;
+    height: 310px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.light{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor:pointer;
+}
+.red{
+    background: rgba(204,50,50);
+    &--selected {
+        box-shadow:10px 10px 133px 20px rgba(204,50,50, 1);
+      }
+}
+.yellow{
+    background: rgb(231,180,22);
+    &--selected {
+        box-shadow:10px 10px 133px 20px rgba(231,180,22,1);
+      }
+}
+.green{
+    background:rgb(45,201,55);
+    &--selected {
+        box-shadow:10px 10px 133px 20px rgba(45,201,55,1);
+      }
+}
